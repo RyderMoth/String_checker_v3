@@ -6,7 +6,7 @@ def string_checker(question, valid_ans=['yes', 'no']):
 
     while True:
 
-        # Get user response is a word in the list
+        # Get user response and make sure it's lowercase
         user_response = input(question).lower()
 
         for item in valid_ans:
@@ -24,11 +24,11 @@ def string_checker(question, valid_ans=['yes', 'no']):
         print()
 
 
-# Main routine goes here
+# main routine goes here
 
 rps_list = ["rock", "paper", "scissors", "xxx"]
 
-want_instructions = string_checker("Do you want to see the instruction? ")
+want_instructions = string_checker("Do you want to see the instructions? ")
 
 print("You chose: ", want_instructions)
 
